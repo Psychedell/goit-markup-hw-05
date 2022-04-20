@@ -223,6 +223,9 @@ img {
     height: 100%;
     background: rgba(0, 0, 0, 0.2);
     z-index: 2;
+
+    opacity: 1;
+    transition: opacity 250ms var(--overlay-cubic);
 }
 
 .backdrop.is-hidden {
@@ -260,6 +263,7 @@ img {
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 50%;
+
 }
 
 /* section */
