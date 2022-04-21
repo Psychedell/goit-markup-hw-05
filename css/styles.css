@@ -250,7 +250,7 @@ img {
     border-radius: 4px;
 }
 
-.close-bottom {
+.close-button {
     position: absolute;
     right: 8px;
     top: 8px;
@@ -262,9 +262,16 @@ img {
     width: 30px;
     height: 30px;
     border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--primary-bg-color);
     border-radius: 50%;
-
+    fill: var(--black-logo-color);
 }
+
+.close-button:hover {
+   fill: var(--focus-button-bg-color);
+   cursor: pointer;
+}
+
 
 /* section */
 .section {
