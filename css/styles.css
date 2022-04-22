@@ -90,8 +90,7 @@ img {
 .page-header {
     /* position: fixed;
     width: 100%;
-    top: 0;
-    left: 0; */
+    z-index: 999; */
     border-bottom: 1px solid #ECECEC;
     background: var(--primary-bg-color);
     
@@ -101,6 +100,8 @@ img {
     color: var(--titile-text-color);
     padding-top: 32px;
     padding-bottom: 32px;
+    transition: color var(--transition-duration) var(--overlay-cubic);
+    text-decoration: none;
 }
 
 .auth-nav-link {
@@ -110,12 +111,13 @@ img {
     padding-top: 32px;
     padding-bottom: 32px;
     text-decoration: none;
+    transition: color var(--transition-duration) var(--overlay-cubic);
 }
 
 .auth-nav-link:hover,
 .auth-nav-link:focus {
     color: var(--accent-text-color);
-    
+    transition: color var(--transition-duration) var(--overlay-cubic);
 }
 
 .icon-envelope {
@@ -185,12 +187,10 @@ img {
 
 .decor:hover,
 .decor:focus {
-    color: var(--accent-text-color);
+    color: var(--accent-text-color);  
+    transition: color var(--transition-duration) var(--overlay-cubic);
 }
 
-.decor {
-    text-decoration: none;
-}
 
 /* hero */
 .hero {
@@ -203,7 +203,6 @@ img {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 
 .hero-title {
@@ -272,11 +271,13 @@ img {
     background-color: var(--primary-bg-color);
     border-radius: 50%;
     fill: var(--black-logo-color);
+    transition: fill var(--transition-duration) var(--overlay-cubic);
 }
 
 .close-button:hover {
    fill: var(--focus-button-bg-color);
    cursor: pointer;
+   transition: fill var(--transition-duration) var(--overlay-cubic);
 }
 
 
@@ -315,7 +316,6 @@ img {
     font-size: 14px;
     line-height: 1.71;
     margin-bottom: 0;
-    
 }
 
 /* features */
@@ -350,7 +350,6 @@ img {
     font-size: 14px;
     line-height: 1.14;
 }
-
 
 /* we doing */
 .list-doing {
@@ -419,12 +418,16 @@ img {
     height: 100%;
     border-radius: 50%;
     color: var(--icon-bg-color);
+    background-color: var(--primary-bg-color);
+    transition: color var(--transition-duration) var(--overlay-cubic),
+    background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .social-link:hover,
 .social-link:focus {
-    background-color: var(--focus-button-bg-color);
     color: var(--primary-bg-color);
+    background-color: var(--focus-button-bg-color);
+    transition: color var(--transition-duration) var(--overlay-cubic), background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .social-icon {
@@ -458,7 +461,6 @@ img {
 }
 
 /* clients */
- 
 .client-list {
     display: flex;
     flex-wrap: wrap;
@@ -484,12 +486,16 @@ img {
     border: 1px solid var(--icon-bg-color);
     border-radius: 4px;
     color: var(--icon-bg-color);
+    transition: color var(--transition-duration) var(--overlay-cubic),
+    border var(--transition-duration) var(--overlay-cubic);
 }
 
 .button-client:hover,
 .button-client:focus {
     color: var(--focus-button-bg-color);
     border: 1px solid var(--focus-button-bg-color);
+    transition: color var(--transition-duration) var(--overlay-cubic),
+    border var(--transition-duration) var(--overlay-cubic);
 }
 
 .client-icon {
@@ -549,12 +555,18 @@ img {
     text-decoration: none;
 }
 
+.item.portfolio {
+    box-shadow: none;
+    transition: box-shadow var(--transition-duration) var(--overlay-cubic);
+}
+
 .item.portfolio:hover,
 .item.portfolio:focus {
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: box-shadow var(--transition-duration) var(--overlay-cubic);
 }
 
 .item.portfolio:hover .portfolio-img-overlay,
@@ -591,6 +603,7 @@ img {
 .footer-logo-last,
 .footer-logo-address {
     color: var(--white-text-color);
+    transition: color var(--transition-duration) var(--overlay-cubic);
 }
 .footer-logo-first {
     color: var(--accent-text-color);
@@ -598,6 +611,7 @@ img {
 
 .address-phone-mail {
     color: rgba(255, 255, 255, 0.6);
+    transition: color var(--transition-duration) var(--overlay-cubic);
 }
 
 .footer-logo-address,
@@ -607,6 +621,7 @@ img {
     line-height: 1.71;
     font-style: normal;
     margin-bottom: 9px;
+    text-decoration: none;
 }
 
 .address-phone-mail:last-child {
@@ -662,13 +677,17 @@ img {
     height: 100%;
     border-radius: 50%;
     color: var(--white-text-color);
-    background: rgba(255, 255, 255, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: color var(--transition-duration) var(--overlay-cubic),
+    background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .footer-social-link:hover,
 .footer-social-link:focus {
-    background-color: var(--focus-button-bg-color);
     color: var(--primary-bg-color);
+    background-color: var(--focus-button-bg-color);
+    transition: color var(--transition-duration) var(--overlay-cubic),
+    background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .footer-social-icon {
@@ -702,12 +721,13 @@ img {
     margin-left: auto;
     margin-right: auto;
     border: transparent;
-
+    transition: background-color var(--transition-duration) var(--overlay-cubic);
     }
 
 .button.photo-nav {
     color: var(--titile-text-color);
     background-color: var(--button-bg-color); 
+    box-shadow: none;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
@@ -716,11 +736,15 @@ img {
     font-family: inherit;
     cursor: pointer;
     padding: 6px 22px;
+    transition: color var(--transition-duration) var(--overlay-cubic),
+    background-color var(--transition-duration) var(--overlay-cubic),
+    box-shadow var(--transition-duration) var(--overlay-cubic);
 }
 
 .button:hover,
 .button:focus {
     background-color: var(--focus-button-bg-color-order);
+    transition: background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .button.photo-nav:hover,
@@ -730,6 +754,9 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
+    transition: color var(--transition-duration) var(--overlay-cubic),
+    background-color var(--transition-duration) var(--overlay-cubic),
+    box-shadow var(--transition-duration) var(--overlay-cubic);
 }
 
 .button.photo-nav.primary {
