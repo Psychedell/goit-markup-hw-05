@@ -117,7 +117,6 @@ img {
 .auth-nav-link:hover,
 .auth-nav-link:focus {
     color: var(--accent-text-color);
-    transition: color var(--transition-duration) var(--overlay-cubic);
 }
 
 .icon-envelope {
@@ -188,7 +187,6 @@ img {
 .decor:hover,
 .decor:focus {
     color: var(--accent-text-color);  
-    transition: color var(--transition-duration) var(--overlay-cubic);
 }
 
 
@@ -274,12 +272,11 @@ img {
     border-radius: 50%;
     fill: var(--black-logo-color);
     transition: fill var(--transition-duration) var(--overlay-cubic);
+    cursor: pointer;
 }
 
 .close-button:hover {
    fill: var(--focus-button-bg-color);
-   cursor: pointer;
-   transition: fill var(--transition-duration) var(--overlay-cubic);
 }
 
 
@@ -429,7 +426,6 @@ img {
 .social-link:focus {
     color: var(--primary-bg-color);
     background-color: var(--focus-button-bg-color);
-    transition: color var(--transition-duration) var(--overlay-cubic), background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .social-icon {
@@ -496,8 +492,6 @@ img {
 .button-client:focus {
     color: var(--focus-button-bg-color);
     border: 1px solid var(--focus-button-bg-color);
-    transition: color var(--transition-duration) var(--overlay-cubic),
-    border var(--transition-duration) var(--overlay-cubic);
 }
 
 .client-icon {
@@ -568,7 +562,6 @@ img {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
         0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition: box-shadow var(--transition-duration) var(--overlay-cubic);
 }
 
 .item.portfolio:hover .portfolio-img-overlay,
@@ -688,8 +681,6 @@ img {
 .footer-social-link:focus {
     color: var(--primary-bg-color);
     background-color: var(--focus-button-bg-color);
-    transition: color var(--transition-duration) var(--overlay-cubic),
-    background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .footer-social-icon {
@@ -746,7 +737,6 @@ img {
 .button:hover,
 .button:focus {
     background-color: var(--focus-button-bg-color-order);
-    transition: background-color var(--transition-duration) var(--overlay-cubic);
 }
 
 .button.photo-nav:hover,
@@ -756,9 +746,6 @@ img {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
     0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
-    transition: color var(--transition-duration) var(--overlay-cubic),
-    background-color var(--transition-duration) var(--overlay-cubic),
-    box-shadow var(--transition-duration) var(--overlay-cubic);
 }
 
 .button.photo-nav.primary {
