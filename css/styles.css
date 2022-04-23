@@ -226,10 +226,12 @@ img {
     z-index: 2;
 
     opacity: 1;
+    visibility: visible;
     transition: opacity var(--transition-duration) var(--overlay-cubic);
 }
 
 .backdrop.is-hidden {
+    visibility: hidden;
     opacity: 0;
     pointer-events: none;
 }
