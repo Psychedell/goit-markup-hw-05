@@ -65,15 +65,6 @@
           <button type="button" class="button" data-modal-open>Заказать услугу</button>
         </div>
 
-        <div class="backdrop is-hidden" data-modal>
-          <div class="modal">
-            <button class="close-button" data-modal-close>
-              <svg class="close-button-icon" style="width: 11px; height: 11px">
-                <use href="./images/icons.svg#window-close"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
       </section>
 
       <!--Плюсы работы-->
@@ -432,6 +423,40 @@
         </div>
       </div>
     </footer>
+
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+          <div class="modal">
+            <button class="close-button" data-modal-close>
+              <svg class="close-button-icon" style="width: 11px; height: 11px">
+                <use href="./images/icons.svg#window-close"></use>
+              </svg>
+            </button>
+
+            <form class="form">
+              <div role="group" class="form-group">
+                <p>Оставьте свои данные, мы вам перезвоним</p>
+
+                <label for="name">Имя</label>
+                <input type="text" name="user-name" id="name">
+
+                <label for="tel">Телефон</label>
+                <input type="tel" name="tel" id="tel">
+
+                <label for="email">Почта</label>
+                <input type="email" name="email" id="email">
+
+                <label for="comment">Комментарий</label>
+                <textarea name="comment" id="comment" rows="5" placeholder="Введите текст"></textarea>
+
+                <input type="checkbox" name="policy" id="policy">
+                <label for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+
+                <button type="submit">Отправить</button>
+              </div>
+            </form>
+          </div>
+        </div>
 
     <script src="./js/modal.js"></script>
   </body>
