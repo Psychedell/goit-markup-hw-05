@@ -765,6 +765,7 @@ img {
     margin-left: auto;
     margin-right: auto;
     padding-top: 41px;
+    padding-bottom: 40px;
     
 }
 
@@ -779,13 +780,17 @@ img {
 }
 
 .form-group {
-    margin-bottom: 10px;
+    padding-bottom: 10px;
     display: flex;
     flex-direction: column;
+    margin: 0;
 }
 
-.form-group label {
-    
+.form-input::placeholder {
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
 }
 
 .form-label {
@@ -802,14 +807,32 @@ img {
     padding: 12px;
 }
 
+.form-group.checkbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
 .label-policy {
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+    margin-left: 8px;
+
 }
 
+.label-policy a {
+    color: var(--accent-text-color);
+}
 
-
-
+.form button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
 
